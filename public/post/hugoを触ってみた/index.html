@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>はじめてのHugo | kokardy.net</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="はじめてのHugo" />
+<meta property="og:description" content="Hugoを触ってみた install git clone で説明してあるものが多いけど、Go言語製ということはgo installできるはず。 というわけで以下のコマンド。 $ go" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kokardy.net/post/hugo%E3%82%92%E8%A7%A6%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-03-20T16:37:35&#43;09:00" />
+<meta property="article:modified_time" content="2021-03-20T16:37:35&#43;09:00" />
+
+
+		<meta itemprop="name" content="はじめてのHugo">
+<meta itemprop="description" content="Hugoを触ってみた install git clone で説明してあるものが多いけど、Go言語製ということはgo installできるはず。 というわけで以下のコマンド。 $ go"><meta itemprop="datePublished" content="2021-03-20T16:37:35&#43;09:00" />
+<meta itemprop="dateModified" content="2021-03-20T16:37:35&#43;09:00" />
+<meta itemprop="wordCount" content="386">
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="はじめてのHugo"/>
+<meta name="twitter:description" content="Hugoを触ってみた install git clone で説明してあるものが多いけど、Go言語製ということはgo installできるはず。 というわけで以下のコマンド。 $ go"/>
+
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sawarabi&#43;Mincho">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+	<link rel="manifest" href="/manifest.json">
+		
+</head>
+<body class="body kind-page">
+	<header class="header">
+	<a class="logo" href="/">kokardy.net</a>
+	
+</header>
+
+	<div class="primary">
+	
+	<main class="main">
+		
+<nav class="breadcrumb block" aria-label="breadcrumb">
+	<ol class="breadcrumb__list">
+		
+		<li class="breadcrumb__item">
+			<a class="breadcrumbs__link" href="/">Binario</a>
+		</li>
+		<li class="breadcrumb__item">
+			<a class="breadcrumbs__link" href="/post/">Posts</a>
+		</li>
+		<li class="breadcrumbs__item breadcrumb__item--active" aria-current="page">はじめてのHugo</li>
+	</ol>
+</nav>
+		<div class="single block">
+			<article class="entry">
+	<div class="entry__meta meta mb">
+	<time class="entry__meta-published meta-published" datetime="2021-03-20T16:37:35&#43;09:00">March 20, 2021</time>
+	</div>
+				<h1 class="entry__title">はじめてのHugo</h1>
+<details class="entry__toc toc" open>
+	<summary class="toc__title">Table of Contents</summary>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#install">install</a></li>
+    <li><a href="#サイト作成">サイト作成</a></li>
+    <li><a href="#theme">theme</a></li>
+    <li><a href="#web-font">Web Font</a>
+      <ul>
+        <li><a href="#cssファイル">cssファイル</a></li>
+        <li><a href="#linkタグ">linkタグ</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</details>
+				<div class="entry__content"><h1 id="hugoを触ってみた">Hugoを触ってみた</h1>
+<h2 id="install">install</h2>
+<p>git clone で説明してあるものが多いけど、Go言語製ということはgo installできるはず。</p>
+<p>というわけで以下のコマンド。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ go install github.com/gohugoio/hugo@latest
+$ export PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$PATH<span style="color:#e6db74">&#34;</span>:<span style="color:#e6db74">&#34;</span>$GOPATH<span style="color:#e6db74">&#34;</span>/bin <span style="color:#75715e">#必要なら</span>
+$ hugo version
+hugo v0.81.0 linux/amd64 BuildDate<span style="color:#f92672">=</span>unknown
+</code></pre></div><h2 id="サイト作成">サイト作成</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#新規サイト作成</span>
+$ hugo new site kokardy.net
+<span style="color:#75715e">#記事のマークダウンファイルを作成</span>
+$ hugo new post/Hugoを触ってみた.md
+</code></pre></div><h2 id="theme">theme</h2>
+<p>テーマ選びは難しい。
+テーマによって、config.tomlが変わってきたりするらしい。
+今回はbinarioを選んだ(適当)。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd kokardy.net
+$ git submodule add https://github.com/vimux/binario themes/binario
+</code></pre></div><h2 id="web-font">Web Font</h2>
+<p>何を思ったか、Webフォントを使ってみようと思いついた。</p>
+<p>今回は、Googleのさわらびフォントを使う。</p>
+<h3 id="cssファイル">cssファイル</h3>
+<p>custom.cssはthemes/binario/assets/css/に置く。</p>
+<p>custom.css:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">body</span>{
+<span style="color:#66d9ef">font-family</span>:<span style="color:#e6db74">&#34;Sawarabi Mincho&#34;</span>;
+}
+</code></pre></div><h3 id="linkタグ">linkタグ</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fonts.googleapis.com/css?family=Sawarabi+Mincho&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span>&gt;
+</code></pre></div><p>をページに挿入しないといけない。</p>
+<p>config.toml中で</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">customCSS</span> = [<span style="color:#e6db74">&#34;css/custom.css&#34;</span>, <span style="color:#e6db74">&#34;https://fonts.googleapis.com/css?family=Sawarabi+Mincho&#34;</span>]
+</code></pre></div><p>とURLを追加するとlinkタグが挿入される。</p>
+</div>
+				
+				<footer class="entry__footer">
+					
+					
+<div class="entry__share share">
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fkokardy.net%2fpost%2fhugo%25E3%2582%2592%25E8%25A7%25A6%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2f&amp;text=%e3%81%af%e3%81%98%e3%82%81%e3%81%a6%e3%81%aeHugo" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+<div class="authorbox block">
+	<div class="author">
+		<figure class="author__avatar">
+			<img class="author__img" alt="kokardy avatar" src="/img/avatar.png" height="90" width="90">
+		</figure>
+		<div class="author__body">
+			<div class="author__name">
+				kokardy
+			</div>
+			<div class="author__bio">a pharmacist and a engineer</div>
+		</div>
+	</div>
+</div>
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/kokardy2">
+			<svg class="social__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/kokardy">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2021 Binario. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+
+<script src="/js/custom.js"></script>
+</body>
+</html>

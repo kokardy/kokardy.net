@@ -6,7 +6,52 @@
     <description>Recent content in Posts on kokardy.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 22 Mar 2021 19:12:34 +0900</lastBuildDate><atom:link href="https://kokardy.net/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Mar 2021 18:15:32 +0900</lastBuildDate><atom:link href="https://kokardy.net/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ABC197_E</title>
+      <link>https://kokardy.net/post/abc197_e/</link>
+      <pubDate>Mon, 29 Mar 2021 18:15:32 +0900</pubDate>
+      
+      <guid>https://kokardy.net/post/abc197_e/</guid>
+      <description>AtCoder Beginner Contest 197 E お題 問題 同じ色のをまとめて、小さい値の色から処理する。 同じ色をまとめたのをどうやってとるか考えている時に時間切れ。 ヒープを使って、</description>
+    </item>
+    
+    <item>
+      <title>ABC197_D</title>
+      <link>https://kokardy.net/post/abc197_d/</link>
+      <pubDate>Mon, 29 Mar 2021 17:58:33 +0900</pubDate>
+      
+      <guid>https://kokardy.net/post/abc197_d/</guid>
+      <description>AtCoder Beginner Contest 197 D お題 問題 多角形の頂点を求める問題。 ポイント とりあえず、最初に思いついたのが中心を求めて、回転だったのでその方針でいく。 中心は、与え</description>
+    </item>
+    
+    <item>
+      <title>ABC197_C</title>
+      <link>https://kokardy.net/post/abc197_c/</link>
+      <pubDate>Mon, 29 Mar 2021 17:39:13 +0900</pubDate>
+      
+      <guid>https://kokardy.net/post/abc197_c/</guid>
+      <description>AtCoder Beginner Contest 197 C お題 問題 数列を区分けして、reduce reduce(or)の結果たちをさらにreduce(xor)したものの最小値 ポイント Nが小さ</description>
+    </item>
+    
+    <item>
+      <title>ABC197_B</title>
+      <link>https://kokardy.net/post/abc197_b/</link>
+      <pubDate>Mon, 29 Mar 2021 17:31:02 +0900</pubDate>
+      
+      <guid>https://kokardy.net/post/abc197_b/</guid>
+      <description>AtCoder Beginner Contest 197 B お題 問題 上下左右にどこまで障害物がないかを問う問題。 ライトが照らすマスを数えるバージョンとかで類題が多い。 全マスの状態を調べないと</description>
+    </item>
+    
+    <item>
+      <title>ABC197_A</title>
+      <link>https://kokardy.net/post/abc197_a/</link>
+      <pubDate>Mon, 29 Mar 2021 17:24:21 +0900</pubDate>
+      
+      <guid>https://kokardy.net/post/abc197_a/</guid>
+      <description>AtCoder Beginner Contest 197 A お題 問題 最初の文字を最後に持ってきた文字列を返す。 ポイント A問題だと、複数のやり方を思いついてしまうことも多いけど、これはインデッ</description>
+    </item>
+    
     <item>
       <title>迷路が好きなだけできるサイト</title>
       <link>https://kokardy.net/post/%E8%BF%B7%E8%B7%AF%E3%81%8C%E5%A5%BD%E3%81%8D%E3%81%AA%E3%81%A0%E3%81%91%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%B5%E3%82%A4%E3%83%88/</link>

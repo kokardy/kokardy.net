@@ -6,7 +6,43 @@
     <description>Recent content in Posts on kokardy.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 29 Mar 2021 18:15:32 +0900</lastBuildDate><atom:link href="https://kokardy.net/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 May 2021 20:23:23 +0900</lastBuildDate><atom:link href="https://kokardy.net/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ABC202_D</title>
+      <link>https://kokardy.net/post/abc202_d/</link>
+      <pubDate>Sun, 23 May 2021 20:23:23 +0900</pubDate>
+      
+      <guid>https://kokardy.net/post/abc202_d/</guid>
+      <description>AtCoder Beginner Contest 202 D お題 問題 ポイント とりあえず、重複する値がある順列の計算のために、階乗を計算しておく。 それを使ってaがA個、bがB個の順列を計算する</description>
+    </item>
+    
+    <item>
+      <title>ABC202_C</title>
+      <link>https://kokardy.net/post/abc202_c/</link>
+      <pubDate>Sun, 23 May 2021 20:17:31 +0900</pubDate>
+      
+      <guid>https://kokardy.net/post/abc202_c/</guid>
+      <description>AtCoder Beginner Contest 202 C お題 問題 ポイント まずは、B, C から$$ B_{C_j} $$ の新しい数列を作ってしまい、どの数字がいくつあるかを数える。 あとはAを頭から順番に、何個</description>
+    </item>
+    
+    <item>
+      <title>ABC202_B</title>
+      <link>https://kokardy.net/post/abc202_b/</link>
+      <pubDate>Sun, 23 May 2021 20:13:35 +0900</pubDate>
+      
+      <guid>https://kokardy.net/post/abc202_b/</guid>
+      <description>AtCoder Beginner Contest 202 B お題 問題 ポイント いくつか数字が出てくるけど、 数字を変換する必要があるのは、6,9だけ。 あとは文字列の順番を逆にすればOK。 回答 def main():</description>
+    </item>
+    
+    <item>
+      <title>ABC202_A</title>
+      <link>https://kokardy.net/post/abc202_a/</link>
+      <pubDate>Sun, 23 May 2021 20:09:55 +0900</pubDate>
+      
+      <guid>https://kokardy.net/post/abc202_a/</guid>
+      <description>AtCoder Beginner Contest 202 A お題 問題 ポイント ウラ面を一つずつ計算してもいいけど、 $$21 - (A+B+C)$$する方が早い</description>
+    </item>
+    
     <item>
       <title>ABC197_E</title>
       <link>https://kokardy.net/post/abc197_e/</link>
